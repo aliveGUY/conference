@@ -1,0 +1,143 @@
+.burger {
+    cursor: pointer;
+    position: relative;
+    background: #3a3535;
+    width: 25px;
+    height: 5px;
+    transition: 0.2s;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  position: absolute;
+  background: #3a3535;
+  width: 25px;
+  height: 5px;
+  transition: 0.2s;
+}
+  
+.burger::before {
+  transform: translateY(10px);
+}
+
+.burger::after {
+  transform: translateY(-10px);
+}
+  
+.burger.active::before {
+  transform: rotate(45deg);
+}
+    
+.burger.active::after {
+  transform: rotate(-45deg);
+}
+  
+.burger.active {
+  width: 0;
+}
+  
+.dropdown-menu {
+  border: none;
+  width: 100vw;
+  height: 70vh;
+}
+
+#Headline {
+  color: #fd3822;
+  background: rgb(247, 247, 247);
+}
+
+#Headline h1 {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+}
+
+.Headline-box {
+  color: #3a3535;
+  background: #fff;
+  box-shadow: 0px 0px 1px 0.01px #3a3535;
+  border-radius: 5px;
+}
+
+#Headline-contact {
+  color: #3a3535;   
+}
+
+#Headline-mail {
+  color: #3a3535;  
+}
+
+.Logo-section {
+    color: #3a3535;;
+}
+
+.line {
+    margin: 10px auto;
+  width: 30px;
+  border-bottom: 1.2px #fd3822 solid;
+}
+
+.Logo-section p {
+  font-size: 10px;
+}
+
+.Logo-img {
+  width: 100%;
+  box-shadow: 0px 0px 1px 0.01px #3a3535;
+}
+
+.Logo-img img {
+  width: 65%;
+  height: auto;
+}
+
+.Last-img img {
+     width: 100%;
+  height: auto;
+}
+
+#e1 {
+  height: 200px;
+  background-image: url(/src/img/glob-summit.jpg);
+  background-size: cover;
+
+}
+
+#e2 {
+  height: 200px;
+  background-image: url(/src/img/glob-summit.jpeg);
+  background-size: cover;
+}
+
+.Last-img h2 {
+    height: 100%;
+    color: #fff;
+    position: relative;
+    background: rgba(221, 50, 27, 0.8);
+    backdrop-filter: opacity(20%);;
+}
+
+#Partner {
+  color: #fff;
+  background-color: #3a3535;
+}
+
+#Partner ul li {
+  list-style: none;
+}
+
+#footer {
+    width: 100vw;
+}
+
+#footer img {
+  margin: 0 auto;
+  width: auto;
+  height: 80px;
+}
+
+#footer p{
+  color: #3a3535;
+  margin: auto 0;
+  font-size: 11px;
+}
