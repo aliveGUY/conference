@@ -1,9 +1,10 @@
 var burger = document.querySelector('.burger');
-var Nav = document.querySelector('#Nav');
 
-burger.addEventListener('click', () => {
+burger.addEventListener('click', (e) => {
     burger.classList.toggle('active');
-    Nav.classList.toggle('active')
+    document.querySelector('.Topbar').classList.toggle('active');
+    document.querySelector('.Topbar-nav').classList.toggle('active');
+    
 })
 
 document.querySelector('#e1').addEventListener('mouseover', () => {

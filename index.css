@@ -3,13 +3,10 @@
   padding: 0;
 }
 
-P {
-    margin: 0;
-}
-
 .burger {
+  top: 25px;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   background: #3a3535;
   width: 25px;
   height: 5px;
@@ -45,49 +42,87 @@ P {
   width: 0;
 }
 
-.dropdown-menu {
-  border: none;
+.Topbar {
+  padding: 0 10vw;
+  background-color: transparent;
   width: 100vw;
-  height: 70vh;
+  transition: 0.2s;
 }
 
-#Headline{
-    background-image: url(/src/img/Background.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+.Topbar.active {
+  height: 100vh;
+  background-color: #fff;
 }
 
-#Headline h1{
-  font-family: 'Roboto',sans-serif;
-  font-weight: 900;
-  background-image: url(/src/img/background.jpeg);
+.Topbar-logo{
+  display: none;
+}
+
+.Topbar-logo {
+  background-image: url(/src/img/logo-lg.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: 200%;
-  background-position: bottom;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  height: 100%;
+  min-width: 100px;
 }
 
-#Headline p {
-  color: rgb(255, 51, 0);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+.Topbar-nav {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: none;
+}
+
+.Topbar-nav.active {
+  display: block;
+}
+
+.Topbar-nav li:nth-child(6) {
+  padding: 3px;
+  border: #ec5242 solid 4px !important;
+  margin: 13px;
+}
+
+.Topbar-nav li:hover a {
+  color: #ec5242;
+}
+
+.Topbar-nav li:nth-child(6) a {
+  color: #ec5242;
+}
+.Topbar-nav li {
+  line-height: 15px;
+  margin: 20px;
+  list-style: none;
+}
+
+.Topbar-nav li a {
+  color: #3a3535;
+  text-decoration: none;
+}
+
+
+#Headline {
+background-image: url(/src/img/mobile_intro_bg.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.Headline-wrapper {
+  padding-top: 15vh;
+}
+
+.Headline-title {
+  width:90%;
+  height: auto;
 }
 
 #Headline-box {
-    border: 5px solid rgba(255, 255, 255, 0.555);
-    color: rgb(104, 104, 104) !important;
-    background-color: rgb(245, 245, 245);
-    font-size: 12px
-}
-
-#Headline-date {
-  margin: 10px 0 0 0;
-  font-family: 'Roboto',sans-serif;
-  font-weight: 900;
+  border: 5px solid rgba(255, 255, 255, 0.555);
   color: rgb(104, 104, 104) !important;
+  background-color: rgb(245, 245, 245);
+  font-size: 12px;
+  margin: 7vh 0;
 }
 
 #Headline-sponsor {
@@ -96,70 +131,259 @@ P {
 }
 
 #MainProgram {
-    background-image: url(/src/img/hitmark.png);
-    background-size: 15px;
-    color: #fff;
+  background-color: rgb(39, 42, 50);
+  background-image: url(/src/img/hitmark.png);
+  background-size: 35px;
+  color: #fff;
 }
 
-#MainProgram h2 {
-  border-bottom: #ec5242 solid 1px;
-}
-
-.MailProgram-list {
-  background: rgba(255, 255, 255, 0.103);
+.MainProgram-list {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 15vw 20vw 1fr;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .MainProgram-Image{
-    background-image: url(/src/img/lecturer.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  grid-area: 1/ 1/span 1/ span 1;
+  height: auto;
+  width: 100%;
+  margin: auto 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .MainProgram-type {
+  grid-area: 1/ 2/span 1/ span 1;
   font-size: 14px;
   font-family: 'Roboto',sans-serif;
   font-weight: 600;
   color: #ec5242 !important;
 }
 
+.MainProgram-text {
+  grid-area: 1/ 3/span 1/ span 1;
+}
+
 #MainProgram div {
   font-size: 12px;
 }
 
+#MainProgram ul{
+  list-style: none;
+  padding: 0 !important;
+}
+
+.MainProgram-link {
+  text-decoration: none;
+  display: none;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.MainProgram-link:hover {
+  color: #fff;
+  border-bottom: #fff solid 2px;
+  margin-bottom: 68px;
+}
+
 #MainProgram-btn {
-    color: #fff;
-    border: none;
-    background-color: #ec5242;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-}
-
-.Featured-img {
-    background-image: url(/src/img/checks.webp);
-    background-size: 50%;
-    background-repeat: no-repeat;
-}
-
-.Featured-avatar {
-    transform:translateY(12px);
-    height: 100px;
-    width: 100px;
-    background-image: url(/src/img/YochaiBenkler.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.Featured-txt p{
-    font-size: 12px;
-}
-
-.Featured-des {
-    color: #ec5242;
+  color: #fff;
+  border: none;
+  background-color: #ec5242;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
 }
 
 .line {
-    width: 20px;
-  margin: 7px 0;
-  border-bottom: #3a3535 solid 1px;
+  width: 50px;
+  border-bottom: #ec5242 1px solid;
+}
+
+.Featured-SPEAKERS {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto
+}
+
+#Yochai {
+  grid-area: 1/ 1/span 1/ span 1;
+}
+
+#Kilnam {
+  grid-area: 2/ 1/span 1/ span 1;
+}
+
+#Sohyeong {
+  grid-area: 3/ 1/span 1/ span 1;
+}
+
+#Julia {
+  grid-area: 4/ 1/span 1/ span 1;
+}
+
+#Lila {
+  grid-area: 5/ 1/span 1/ span 1;
+}
+
+#Ryan {
+  grid-area: 6/ 1/span 1/ span 1;
+}
+
+.Featured-speaker img{
+  width: 150px;
+  height: auto;
+  float: left;
+}
+
+.Featured-speaker p{
+  line-height: 13px;
+  font-size: 12px;
+}
+
+.Featured-des {
+  color: #ec5242;
+}
+
+#Partner {
+  color: #fff;
+  background-color: #3a3535;
+}
+
+#Partner ul {
+  justify-content: center;
+  list-style: none;
+}
+
+#footer {
+    width: 100vw;
+}
+
+#Sponsors li img{
+  width: 100px;
+  height: auto;
+}
+
+
+#footer p{
+  color: #3a3535;
+  margin: auto 0;
+  font-size: 11px;
+}
+
+@media screen and (min-device-width: 768px) {
+  #Topbar-Wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Topbar {
+    background-color: #fff;
+    box-shadow: 1px 0.01px 10px black;
+  }
+
+  .Topbar-logo-a {
+    height: 100%;
+    width: auto;
+  }
+
+  .Topbar-logo {
+    display: block;
+    height: 60px;
+
+  }
+
+  .Topbar-burger {
+    display: none;
+  }
+
+  .Topbar-nav {
+    display: flex;
+  }
+
+  #Headline {
+    background-image: url(/src/img/main_big.png);
+    padding-top: 1rem;
+    height: auto;
+  }
+
+  .Headline-wrapper {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+  
+  #Headline p {
+    font-size: 15px;
+    padding: 0 !important;
+  }
+
+  #Headline p:nth-child(3) {
+    font-size: 15px;
+    max-width: 60vw;
+    margin: 20px 0 !important;
+  }
+
+  #MainProgram ul {
+    display: flex;
+  }
+
+  #MainProgram ul li {
+    display: flex;
+  }
+  
+  .MainProgram-list {
+    margin-left: 5px;
+    max-width: 160px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+  }
+
+  .MainProgram-Image{
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    grid-area: 1/ 1/span 1/ span 1;
+  }
+  
+  .MainProgram-type {
+    margin: 10px 0;
+    grid-area: 2/ 1/span 1/ span 1;
+  }
+  
+  .MainProgram-text {
+    grid-area: 3/ 1/span 1/ span 1;
+  }
+
+  .MainProgram-link {
+    display: block;
+  }
+  
+  #MainProgram-btn {
+    display: none;
+  }
+
+  #Yochai {
+    grid-area: 1/ 1/span 1/ span 1;
+  }
+  
+  #Kilnam {
+    grid-area: 1/ 2/span 1/ span 1;
+  }
+  
+  #Sohyeong {
+    grid-area: 2/ 1/span 1/ span 1;
+  }
+  
+  #Julia {
+    grid-area: 2/ 2/span 1/ span 1;
+  }
+  
+  #Lila {
+    grid-area: 3/ 1/span 1/ span 1;
+  }
+  
+  #Ryan {
+    grid-area: 3/ 2/span 1/ span 1;
+  }
 }

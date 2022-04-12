@@ -10,76 +10,74 @@
     <title>About</title>
 </head>
 <body>
-    <nav class="container navbar position-fixed" style="height: 50px;">
-        <div class="d-flex align-items-center nav-link" id="navbarDropdown" data-bs-toggle="dropdown">
-            <div class="burger"></div>
+    <nav class="Topbar position-fixed">
+        <div id="Topbar-Wrapper">
+            <a class="Topbar-logo" href="/index.html">
+                <img src="/src/img/logo-lg.png" class="Topbar-logo-a" alt="">
+            </a>
+            <div class="Topbar-burger">
+                <div class="burger"></div>
+            </div>
+            <ul class="Topbar-nav">
+                <li><a href="/src/pages/about.html">Про нас</a></li>
+                <li><a href="#">Програма</a></li>
+                <li><a href="#">Приєднатися</a></li>
+                <li><a href="#">Спонсори</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">CC campaign</a></li>
+            </ul>
         </div>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="../../index.html">Main</a></li>
-            <li><a class="dropdown-item" href="#">Program</a></li>
-            <li><a class="dropdown-item" href="#">Join</a></li>
-            <li><a class="dropdown-item" href="#">Spensor</a></li>
-            <li><a class="dropdown-item" href="#">News</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">CC campaign</a></li>
-        </ul>
     </nav>
-    <section id="Headline" class="text-center p-2 pt-3 pb-4">
-        <p class="pt-5">"Hello! Sharing world!"</p>
-        <h1>CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
-        <p id="Headline-box" class="Headline-box p-3">The Global Summit brings together the communoty of experts, academics, and activists who comprise the Creative Commons afiliate network in a different country every two. This year, we hope to expand our invitaion list including organizations and individuals</p>
-        <p id="Headline-contact" class="m-0">Please contact us per Email for any further questions about CC Global Summit 2015!</p>
-        <a id="Headline-mail" href="#">ccsummit2015@cckorea.org</a>
-    </section>
+    <section id="Headline" class="text-center">
+        <div id="Headline-wrapper" class="container">
+            <p class="pt-5">"Привіт! Ділимося світом!"</p>
+            <img src="/src/img/about_title.png" class="Headline-title mb-4" alt="">
+            <p id="Headline-box" class="Headline-box p-3 mb-4">Зокрема, на цьогорічному саміті CC, заходи щодо поширення цінності обміну, вільної культури та відкритого знання з CC Чекаємо на участь різноманітних організацій та окремих учасників, які бажають взяти участь. Прихильник вільного програмного забезпечення, активіст Вікіпедії, активіст Open Knowledge Foundation, художня галерея, бібліотека, музей, архів, уряд, Ми сподіваємося, що це буде можливість поділитися своїми думками щодо створення більш процвітаючої та динамічної спільної екосистеми.</p>
+            <p id="Headline-contact" class="m-0">У вас є інші запитання щодо CC Global Summit 2015?</p>
+            <a id="Headline-mail" href="#">ccsummit2015@cckorea.org</a>
+        </div>
+        </section>
     <section class="Logo-section text-center container pt-4">
         <div class="container mb-4">
-            <h2 class="m-0">Creative Commons Global Summit 2015 Logo</h2>
+            <h2 class="m-0">Логотип Creative Commons Global Summit 2015</h2>
             <div class="line"></div>
             <p>The logo of CC Global Summit 2015 was decided through the logo competition from 8. June to 7. July.</p>
         </div>
-        <div class="Logo-img p-2">
-            <img src="/src/img/logo-lg.png" alt="#">
-        </div>
+        <img class="Logo-img" src="/src/img/logo-lg.png" alt="#">
+        <p>Нареш Агравал з Індії, який розробив твір-переможець, пояснює значення логотипу наступним чином.</p>
+        <p>" Різнокольорові кола символізують злиття технологій експертами з різних куточків світу. Коло символізує захист, гармонію, цілісність і нескінченність. "</p>
     </section>
     <hr>
     <section class="text-center container">
-        <div class="container">
-            <h2>See the past CC Global Summits</h2>
+        <h2>Перегляньте минулі глобальні саміти</h2>
             <div  class="line"></div>
-            <p>Take a look at the last two CC global Summits which took place in Buenos Aiers in Warsaw</p>
-            <div id="e1" class="Last-img mb-3">
-                <h2 class="date1">2014</h2>
+            <p>Подивіться на нещодавні глобальні саміти, що відбулися в Буенос-Айресі (Аргентина) та Варшаві (Польща).</p>
+            <div id="images">
+                <img src="/src/img/about_2013.png" alt="" class="summit2013 m-1">
+                <img src="/src/img/about_2011.png" alt="" class="summit2011 m-1">
             </div>
-            <div id="e2" class="Last-img mb-5">
-                <h2 class="date2">2013</h2>
-            </div>
-        </div>
     </section>
-    <section id="Partner" class="container text-center">
+    <section id="Partner" class=" text-center">
         <h2>Partner</h2>
         <div class="line"></div>
-        <ul class="d-flex flex-wrap pb-4">
+        <ul id="Sponsors" class="d-flex flex-wrap m-0 p-0">
             <li class="p-3">
-                Mozzila
+                <img src="/src/img/mozilla.svg" alt="">
             </li>
             <li class="p-3">
-                Google
+                <img src="/src/img/googlekorea.png" alt="">
             </li>
             <li class="p-3">
-                NAVER
+                <img src="/src/img/naver.webp" alt="">
             </li>
             <li class="p-3">
-                daumkakao
+                <img src="/src/img/kakao.png" alt="">
             </li>
             <li class="p-3">
-                airbnb
+                <img src="/src/img/airbnb.png" alt="">
             </li>
         </ul>
     </section>
-    <footer id="footer" class="row">
-        <img src="/src/img/logo-sm.png" alt="#" class="col-6">
-        <p class="col-6">2015 Creative Commons Korea. Some Rights Reserved</p>
-    </footer>
 
     
     <script src="/class-toggle.js"></script>

@@ -1,10 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .burger {
-    cursor: pointer;
-    position: relative;
-    background: #3a3535;
-    width: 25px;
-    height: 5px;
-    transition: 0.2s;
+  top: 25px;
+  cursor: pointer;
+  position: absolute;
+  background: #3a3535;
+  width: 25px;
+  height: 5px;
+  transition: 0.2s;
 }
 .burger::before,
 .burger::after {
@@ -15,7 +21,7 @@
   height: 5px;
   transition: 0.2s;
 }
-  
+
 .burger::before {
   transform: translateY(10px);
 }
@@ -23,33 +29,93 @@
 .burger::after {
   transform: translateY(-10px);
 }
-  
+
 .burger.active::before {
   transform: rotate(45deg);
 }
-    
+  
 .burger.active::after {
   transform: rotate(-45deg);
 }
-  
+
 .burger.active {
   width: 0;
 }
-  
-.dropdown-menu {
-  border: none;
+
+.Topbar {
+  padding: 0 10vw;
+  background-color: transparent;
   width: 100vw;
-  height: 70vh;
+  transition: 0.2s;
+}
+
+.Topbar.active {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.Topbar-logo{
+  display: none;
+}
+
+.Topbar-logo {
+  background-image: url(/src/img/logo-lg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-width: 100px;
+}
+
+.Topbar-nav {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: none;
+}
+
+.Topbar-nav.active {
+  display: block;
+}
+
+.Topbar-nav li:nth-child(6) {
+  padding: 3px;
+  border: #ec5242 solid 4px !important;
+  margin: 13px;
+}
+
+.Topbar-nav li:hover a {
+  color: #ec5242;
+}
+
+.Topbar-nav li:nth-child(6) a {
+  color: #ec5242;
+}
+.Topbar-nav li {
+  line-height: 15px;
+  margin: 20px;
+  list-style: none;
+}
+
+.Topbar-nav li a {
+  color: #3a3535;
+  text-decoration: none;
 }
 
 #Headline {
+  background-image: url(/src/img/about_bg_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   color: #fd3822;
-  background: rgb(247, 247, 247);
+  background-color: rgb(247, 247, 247);
 }
 
-#Headline h1 {
-    font-family: 'Roboto',sans-serif;
-    font-weight: 900;
+#Headline-wrapper {
+  padding-bottom: 50px;
+}
+
+.Headline-title {
+  width: 80%;
+  height: auto;
 }
 
 .Headline-box {
@@ -64,7 +130,7 @@
 }
 
 #Headline-mail {
-  color: #3a3535;  
+  color: #3a3535;
 }
 
 .Logo-section {
@@ -83,38 +149,21 @@
 
 .Logo-img {
   width: 100%;
+  max-width: 700px;
   box-shadow: 0px 0px 1px 0.01px #3a3535;
 }
 
-.Logo-img img {
-  width: 65%;
+.summit2013, .summit2011 {
+  max-width: 95%;
   height: auto;
 }
 
-.Last-img img {
-     width: 100%;
-  height: auto;
+.summit2013:hover {
+  content: url(/src/img/about_2013_hover.png);
 }
 
-#e1 {
-  height: 200px;
-  background-image: url(/src/img/glob-summit.jpg);
-  background-size: cover;
-
-}
-
-#e2 {
-  height: 200px;
-  background-image: url(/src/img/glob-summit.jpeg);
-  background-size: cover;
-}
-
-.Last-img h2 {
-    height: 100%;
-    color: #fff;
-    position: relative;
-    background: rgba(221, 50, 27, 0.8);
-    backdrop-filter: opacity(20%);;
+.summit2011:hover {
+  content: url(/src/img/about_2011_hover.png);
 }
 
 #Partner {
@@ -122,7 +171,8 @@
   background-color: #3a3535;
 }
 
-#Partner ul li {
+#Partner ul {
+  justify-content: center;
   list-style: none;
 }
 
@@ -130,14 +180,63 @@
     width: 100vw;
 }
 
-#footer img {
-  margin: 0 auto;
-  width: auto;
-  height: 80px;
+#Sponsors li img{
+  width: 100px;
+  height: auto;
 }
+
 
 #footer p{
   color: #3a3535;
   margin: auto 0;
   font-size: 11px;
+}
+
+@media screen and (min-device-width: 768px) {
+  #Topbar-Wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Topbar {
+    background-color: #fff;
+    box-shadow: 1px 0.01px 10px black;
+  }
+
+  .Topbar-logo-a {
+    height: 100%;
+    width: auto;
+  }
+
+  .Topbar-logo {
+    display: block;
+    height: 60px;
+
+  }
+
+  .Topbar-burger {
+    display: none;
+  }
+
+  .Topbar-nav {
+    display: flex;
+  }
+
+  #Headline {
+    padding-top: 4rem;
+    height: auto;
+  }
+
+  #images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+
+  }
+
+  #images img {
+    max-width: 49%;
+  }
 }
