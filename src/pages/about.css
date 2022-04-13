@@ -12,6 +12,7 @@
   height: 5px;
   transition: 0.2s;
 }
+
 .burger::before,
 .burger::after {
   content: '';
@@ -33,7 +34,7 @@
 .burger.active::before {
   transform: rotate(45deg);
 }
-  
+
 .burger.active::after {
   transform: rotate(-45deg);
 }
@@ -54,11 +55,25 @@
   background-color: #fff;
 }
 
-.Topbar-logo{
-  display: none;
+.Topbar-nav.active {
+  padding-top: 10vh !important;
+  display: block;
+}
+
+.Topbar-nav li {
+  line-height: 15px;
+  margin: 20px;
+  list-style: none;
+}
+
+.Topbar-nav.active li {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px 0 !important;
 }
 
 .Topbar-logo {
+  display: none;
   background-image: url(/src/img/logo-lg.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -72,8 +87,13 @@
   display: none;
 }
 
-.Topbar-nav.active {
-  display: block;
+.Topbar-nav li a {
+  color: #3a3535;
+  text-decoration: none;
+}
+
+.Topbar-nav li:hover a {
+  color: #ec5242;
 }
 
 .Topbar-nav li:nth-child(6) {
@@ -82,22 +102,8 @@
   margin: 13px;
 }
 
-.Topbar-nav li:hover a {
-  color: #ec5242;
-}
-
 .Topbar-nav li:nth-child(6) a {
   color: #ec5242;
-}
-.Topbar-nav li {
-  line-height: 15px;
-  margin: 20px;
-  list-style: none;
-}
-
-.Topbar-nav li a {
-  color: #3a3535;
-  text-decoration: none;
 }
 
 #Headline {
@@ -121,12 +127,12 @@
 .Headline-box {
   color: #3a3535;
   background: #fff;
-  box-shadow: 0px 0px 1px 0.01px #3a3535;
+  box-shadow: 0.1px 0.1px 1px 0.01px #3a3535;
   border-radius: 5px;
 }
 
 #Headline-contact {
-  color: #3a3535;   
+  color: #3a3535;
 }
 
 #Headline-mail {
@@ -134,12 +140,12 @@
 }
 
 .Logo-section {
-    color: #3a3535;;
+  color: #3a3535;
 }
 
 .line {
-    margin: 10px auto;
-  width: 30px;
+  margin: 10px auto;
+  width: 50px;
   border-bottom: 1.2px #fd3822 solid;
 }
 
@@ -150,10 +156,11 @@
 .Logo-img {
   width: 100%;
   max-width: 700px;
-  box-shadow: 0px 0px 1px 0.01px #3a3535;
+  box-shadow: 0.1px 0.1px 1px 0.01px #3a3535;
 }
 
-.summit2013, .summit2011 {
+.summit2013,
+.summit2011 {
   max-width: 95%;
   height: auto;
 }
@@ -177,23 +184,22 @@
 }
 
 #footer {
-    width: 100vw;
+  width: 100vw;
 }
 
-#Sponsors li img{
+#Sponsors li img {
   width: 100px;
   height: auto;
 }
 
-
-#footer p{
+#footer p {
   color: #3a3535;
   margin: auto 0;
   font-size: 11px;
 }
 
 @media screen and (min-device-width: 768px) {
-  #Topbar-Wrapper{
+  #Topbar-Wrapper {
     display: flex;
     justify-content: space-between;
   }
@@ -211,7 +217,6 @@
   .Topbar-logo {
     display: block;
     height: 60px;
-
   }
 
   .Topbar-burger {
@@ -231,9 +236,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    display: flex;
     margin-bottom: 40px;
-
   }
 
   #images img {
