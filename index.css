@@ -57,7 +57,7 @@
 
 .Topbar-logo {
   display: none;
-  background-image: url(/src/img/logo-lg.png);
+  background-image: url(src/img/logo-lg.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
@@ -107,7 +107,7 @@
 }
 
 #Headline {
-  background-image: url(/src/img/mobile_intro_bg.png);
+  background-image: url(src/img/mobile_intro_bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -137,7 +137,7 @@
 
 #MainProgram {
   background-color: rgb(39, 42, 50);
-  background-image: url(/src/img/hitmark.png);
+  background-image: url(src/img/hitmark.png);
   background-size: 35px;
   color: #fff;
 }
@@ -317,7 +317,7 @@
   }
 
   #Headline {
-    background-image: url(/src/img/main_big.png);
+    background-image: url(src/img/main_big.png);
     padding-top: 1rem;
     height: auto;
   }

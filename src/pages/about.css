@@ -74,7 +74,7 @@
 
 .Topbar-logo {
   display: none;
-  background-image: url(/src/img/logo-lg.png);
+  background-image: url(src/img/logo-lg.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
@@ -107,7 +107,7 @@
 }
 
 #Headline {
-  background-image: url(/src/img/about_bg_01.png);
+  background-image: url(src/img/about_bg_01.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -166,11 +166,11 @@
 }
 
 .summit2013:hover {
-  content: url(/src/img/about_2013_hover.png);
+  content: url(src/img/about_2013_hover.png);
 }
 
 .summit2011:hover {
-  content: url(/src/img/about_2011_hover.png);
+  content: url(src/img/about_2011_hover.png);
 }
 
 #Partner {
