@@ -163,7 +163,7 @@
   grid-area: 1/ 2/span 1/ span 1;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: #ec5242 !important;
 }
 
@@ -198,7 +198,7 @@
   border: none;
   background-color: #ec5242;
   font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .line {
