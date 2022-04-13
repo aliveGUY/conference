@@ -14,7 +14,7 @@ To get a local copy up and running follow these simple example steps.
 - [ ] Open your terminal and enter desired folder for this repo using cd path/path
 
 ### Install
-- [ ] Run `git clone https://github.com/aliveGUY/aliveGUY.github.io` this will clone repository on your local machine
+- [ ] Run `git clone git@github.com:aliveGUY/conference.git` this will clone repository on your local machine
 
 ### Usage
 - [ ] Run `cd Portfolio` now you ready to use repo
