@@ -1,11 +1,10 @@
-import data from "./data.js";
+import data from './data.js';
+
 const speakers = document.querySelector('.Featured-SPEAKERS');
-
-
 
 for (let i = 0; i < data.length; i += 1) {
   const speaker = document.createElement('div');
-  speaker.classList = 'Featured-speaker mb-4'
+  speaker.classList = 'Featured-speaker mb-4';
   speaker.id = data[i].id;
   const image = document.createElement('div');
   image.className = 'featured-img';
@@ -18,20 +17,20 @@ for (let i = 0; i < data.length; i += 1) {
   Name.innerHTML = data[i].name;
   const Position = document.createElement('p');
   Position.innerHTML = data[i].position;
-  Position.classList = 'Featured-des mb-2'
+  Position.classList = 'Featured-des mb-2';
   const line = document.createElement('div');
-  line.classList = 'Line mb-2'
+  line.classList = 'Line mb-2';
   const Description = document.createElement('p');
   Description.innerHTML = data[i].description;
 
-  speakers.appendChild(speaker)
-  speaker.appendChild(image)
-  speaker.appendChild(text)
-  image.appendChild(img)
-  text.appendChild(Name)
-  text.appendChild(Position)
-  text.appendChild(line)
-  text.appendChild(Description)
+  speakers.appendChild(speaker);
+  speaker.appendChild(image);
+  speaker.appendChild(text);
+  image.appendChild(img);
+  text.appendChild(Name);
+  text.appendChild(Position);
+  text.appendChild(line);
+  text.appendChild(Description);
 }
 
 // After loading featured im making them able to drop down
@@ -40,7 +39,6 @@ const speakersAll = document.querySelectorAll('div.Featured-SPEAKERS > .Featured
 
 if (window.matchMedia('(max-device-width: 768px)').matches) {
   for (let i = 2; i < speakersAll.length; i += 1) {
-    console.log(speakersAll[i]);
     speakersAll[i].style.display = 'none';
   }
 

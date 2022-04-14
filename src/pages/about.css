@@ -1,6 +1,19 @@
 * {
   margin: 0;
   padding: 0;
+
+  --black: #272a31;
+  --orange: #ec5242;
+  --white: #d3d3d3;
+
+  font-family: 'open Sans', sans-serif;
+}
+
+h2,
+h3 {
+  font-size: 20px;
+  font-family: 'Cousine', sans-serif;
+  font-weight: 700;
 }
 
 .top_menu {
@@ -17,10 +30,23 @@
   list-style: none;
 }
 
+.Topbar-nav li a {
+  color: #3a3535;
+  text-decoration: none;
+}
+
 .top_menu ul li a {
   font-size: 15px;
   color: #fff;
   text-decoration: none;
+}
+
+.Topbar-nav li:hover a {
+  color: #ec5242;
+}
+
+.Topbar-nav li:nth-child(6) a {
+  color: #ec5242;
 }
 
 .top_menu ul li:nth-child(n+3) a:hover {
@@ -111,23 +137,10 @@
   display: none;
 }
 
-.Topbar-nav li a {
-  color: #3a3535;
-  text-decoration: none;
-}
-
-.Topbar-nav li:hover a {
-  color: #ec5242;
-}
-
 .Topbar-nav li:nth-child(6) {
   padding: 3px;
   border: #ec5242 solid 4px !important;
   margin: 13px;
-}
-
-.Topbar-nav li:nth-child(6) a {
-  color: #ec5242;
 }
 
 #Headline {
@@ -174,7 +187,7 @@
 }
 
 .Logo-section p {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .Logo-img {
@@ -207,6 +220,12 @@
   list-style: none;
 }
 
+.footer-img img {
+  transform: translateX(2vw);
+  height: auto;
+  max-width: 80%;
+}
+
 #Sponsors li img {
   width: 100px;
   height: auto;
@@ -215,12 +234,6 @@
 .footer-img {
   margin: auto 0;
   height: 60px;
-}
-
-.footer-img img {
-  transform: translateX(2vw);
-  height: auto;
-  max-width: 80%;
 }
 
 .foter-text {
