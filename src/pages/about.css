@@ -231,6 +231,10 @@ h3 {
   height: auto;
 }
 
+footer {
+  width: 100vw;
+}
+
 .footer-img {
   margin: auto 0;
   height: 60px;
