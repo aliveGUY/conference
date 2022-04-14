@@ -1,11 +1,13 @@
 # Conference project
 
+**This project is my attempt on recreating main site for CC Global Summit 2015**
+
 # [VIDEO OF PROJECT](https://www.loom.com/share/e425f3beaefa410f864eefb99f1f5e69)
 
 
 ## Acknowledgements
 
-**this project was inspired by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). I thank her for her work and talent. You can visit [her profile](https://www.behance.net/adagio07) to get inspired as well.**
+**This project was inspired by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). I thank her for her work and talent. You can visit [her profile](https://www.behance.net/adagio07) to get inspired as well.**
 
 
 
