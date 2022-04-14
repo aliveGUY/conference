@@ -1,10 +1,21 @@
 # Conference project
-## I made this project to practice HTML CSS JS skills and get familiar with bootstrap
+
+**This project is my attempt on recreating main site for CC Global Summit 2015**
+
+# [VIDEO OF PROJECT](https://www.loom.com/share/ada2a783ebc14a2f9523a893b57f83c7)
+
+
+## Acknowledgements
+
+**This project was inspired by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). I thank her for her work and talent. You can visit [her profile](https://www.behance.net/adagio07) to get inspired as well.**
+
+
 
 ## Built With
 
-- HTML, CSS
-- NPM, JSON, GIT
+- HTML, CSS, JS
+- Bootstrap
+- GIT
 
 ## Getting Started
 
@@ -14,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 - [ ] Open your terminal and enter desired folder for this repo using cd path/path
 
 ### Install
-- [ ] Run `git clone https://github.com/aliveGUY/aliveGUY.github.io` this will clone repository on your local machine
+- [ ] Run `git clone git@github.com:aliveGUY/conference.git` this will clone repository on your local machine
 
 ### Usage
 - [ ] Run `cd Portfolio` now you ready to use repo
