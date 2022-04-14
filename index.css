@@ -335,6 +335,10 @@ h3 {
   list-style: none;
 }
 
+footer {
+  width: 100vw;
+}
+
 .footer-img img {
   transform: translateX(2vw);
   height: auto;
