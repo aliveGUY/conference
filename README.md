@@ -1,10 +1,17 @@
 # Conference project
-## I made this project to practice HTML CSS JS skills and get familiar with bootstrap
+
+
+## Acknowledgements
+
+**this project was inspired by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). I thank her for her work and talent. You can visit [her profile]()(https://www.behance.net/adagio07) to get inspired as well.**
+
+
 
 ## Built With
 
-- HTML, CSS
-- NPM, JSON, GIT
+- HTML, CSS, JS
+- Bootstrap
+- GIT
 
 ## Getting Started
 
