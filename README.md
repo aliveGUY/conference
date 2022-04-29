@@ -2,7 +2,6 @@
 
 **This project is my attempt on recreating main site for CC Global Summit 2015**
 
-# [VIDEO OF PROJECT](https://www.loom.com/share/ada2a783ebc14a2f9523a893b57f83c7)
 
 
 ## Acknowledgements
